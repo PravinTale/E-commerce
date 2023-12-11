@@ -1,11 +1,10 @@
 # E-commerce
-This is a simple E-commerce website built using Core Java and Advanced Java concepts such as Servlet, JSP, and Hibernate.  There are some functionalities for the  admin and customers.
-</br> Admin can add:</br>
-=> Products and Product categories
+This is a simple E-commerce RESTful endpoint built using Core Java and Advanced Java concepts such as Spring Boot, Spring MVC, Spring Data JPA, and Hibernate.  
+There are entities such as User, Cart, Product, Order, and Category.
+In a controller, there are endpoints for get, put, delete, and post.
 
-Customers can:</br>
-=> View products by category</br>
-=> Add product to cart and checkout
+
+
 
 
 
