@@ -17,7 +17,9 @@ public class UserDTO {
     private String mobile;
 
     @NotNull(message = "Please enter password")
-    @Pattern(regexp = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d).{8,}$\n", message = "Input a valid password")
+    //@Pattern(regexp = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d).{8,}$\n", message = "Input a valid password")
+    @Pattern(regexp = "^(?=.*[a-zA-Z])(?=.*\\d).{8,}$", message = "Input a valid password")
+
     private String password;
 }
 

@@ -1,7 +1,6 @@
 package com.newproject.ecomm.service;
 
 import com.newproject.ecomm.exceptions.PasswordMismatchException;
-import com.newproject.ecomm.exceptions.UserAlreadyExistsException;
 import com.newproject.ecomm.exceptions.UserAlreadyLoggedInException;
 import com.newproject.ecomm.exceptions.UserNotFoundException;
 import com.newproject.ecomm.model.CurrentUserSession;
@@ -14,8 +13,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.time.LocalDateTime;
 import java.util.Optional;
 import net.bytebuddy.utility.RandomString;
+import org.springframework.stereotype.Service;
 
-public class UserLoginImpl implements UserLogin{
+@Service
+public class UserLoginServiceImpl implements UserLoginService {
 
     @Autowired
     private CurrentUserSessionDao currentUserRepo;

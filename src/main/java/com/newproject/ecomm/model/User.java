@@ -29,7 +29,6 @@ public class User {
     private String mobile;
 
     @NotNull(message = "Please enter password")
-    @Pattern(regexp = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d).{8,}$\n", message = "Input a valid password")
     private String password;
 
 

@@ -9,11 +9,12 @@ import com.newproject.ecomm.model.User;
 import com.newproject.ecomm.repository.CurrentUserSessionDao;
 import com.newproject.ecomm.repository.UserDao;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.Currency;
 import java.util.Optional;
 
-
+@Service
 public class UserServiceImpl implements  UserService{
     @Autowired
     public UserDao userRepo;
