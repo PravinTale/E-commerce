@@ -19,5 +19,5 @@ public interface ProductDao extends JpaRepository<Product, Integer> {
 
     // Find products by category
     @Query("SELECT p FROM Product p WHERE p.category = :category\n")
-    public List<ProductDTO> getCategoryWiseProducts(CategoryEnum category);
+    public List<Product> getCategoryWiseProducts(CategoryEnum category);
 }
